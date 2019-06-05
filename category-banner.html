@@ -85,10 +85,11 @@
                    
                   Home<i class="fa fa-angle-down"></i></a>
                             <div aria-labelledby="homeDropdownMenuLink" class="dropdown-menu"><a href="index.html" class="dropdown-item">Fullscreen home + Lookbook</a><a href="index2.html" class="dropdown-item">Split-screen home</a><a href="index3.html" class="dropdown-item">Classic home</a><a href="index4.html" class="dropdown-item">Parallax sections <span class="badge badge-info ml-1">New</span></a>
-                                <a href="index5.html" class="dropdown-item">Slider + broken grid <span class="badge badge-info ml-1">New</span> </a>
+                                <a
+                                    href="index5.html" class="dropdown-item">Slider + broken grid <span class="badge badge-info ml-1">New</span> </a>
                             </div>
                         </li>
-                        <li class="nav-item"><a href="category.html" class="nav-link active">Shop</a>
+                        <li class="nav-item"><a href="category.html" class="nav-link">Shop</a>
                         </li>
                         <!-- Megamenu-->
                         <li class="nav-item dropdown position-static"><a href="#" data-toggle="dropdown" class="nav-link">Template<i class="fa fa-angle-down"></i></a>
@@ -262,9 +263,10 @@
                         <li class="nav-item dropdown"><a id="docsDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link ">Docs<i class="fa fa-angle-down"></i></a>
                             <div aria-labelledby="docsDropdownMenuLink" class="dropdown-menu dropdown-menu-right">
                                 <h6 class="dropdown-header font-weight-normal">Documentation</h6><a href="docs/docs-introduction.html" class="dropdown-item">Introduction </a><a href="docs/docs-directory-structure.html" class="dropdown-item">Directory structure </a><a href="docs/docs-gulp.html" class="dropdown-item">Gulp </a>
-                                <a href="docs/docs-customizing-css.html" class="dropdown-item">Customizing CSS </a><a href="docs/docs-credits.html" class="dropdown-item">Credits </a><a href="docs/docs-changelog.html" class="dropdown-item">Changelog </a>
-                                <div class="dropdown-divider"></div>
-                                <h6 class="dropdown-header font-weight-normal">Components</h6><a href="docs/components-bootstrap.html" class="dropdown-item">Bootstrap </a><a href="docs/components-sell.html" class="dropdown-item">Theme </a><a href="component-variants/header.html" class="dropdown-item">Header variants <span class="badge badge-warning ml-1">New</span> </a>
+                                <a
+                                    href="docs/docs-customizing-css.html" class="dropdown-item">Customizing CSS </a><a href="docs/docs-credits.html" class="dropdown-item">Credits </a><a href="docs/docs-changelog.html" class="dropdown-item">Changelog </a>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header font-weight-normal">Components</h6><a href="docs/components-bootstrap.html" class="dropdown-item">Bootstrap </a><a href="docs/components-sell.html" class="dropdown-item">Theme </a><a href="component-variants/header.html" class="dropdown-item">Header variants <span class="badge badge-warning ml-1">New</span> </a>
                             </div>
                         </li>
                     </ul>
@@ -361,26 +363,20 @@
         <!-- /Fullscreen search area-->
 
     </header>
-    <!-- Hero Section-->
-    <section class="hero">
-        <div class="container">
-            <!-- Breadcrumbs -->
-            <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active">Jackets and tops </li>
-            </ol>
-            <!-- Hero Content-->
-            <div class="hero-content pb-5 text-center">
-                <h1 class="hero-heading">Jackets and tops</h1>
-                <div class="row">
-                    <div class="col-xl-8 offset-xl-2">
-                        <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
+    <!-- Breadcrumbs + Hero-->
+    <section data-parallax="scroll" data-image-src="img/photo/erii-gutierrez-487083-unsplash.f1c313f1.jpg" data-speed="0.3" data-position-x="right" class="position-relative dark-overlay py-3 py-lg-7 overflow-hidden">
+        <div class="container overlay-content hero hero-page">
+            <ul class="breadcrumb justify-content-center no-border mb-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                <li class="breadcrumb-item text-white active">Ladies</li>
+            </ul>
+            <div class="hero-content pb-5 text-center text-white">
+                <h1 class="hero-heading">Ladies</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
         </div>
     </section>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <!-- Grid -->
             <div class="products-grid col-xl-9 col-lg-8 order-lg-2">
@@ -400,202 +396,238 @@
               </select>
                     </div>
                 </header>
-                <div class="card-columns product-columns">
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image">
-                            <div class="ribbon ribbon-info">Fresh</div><img src="./img/product/serrah-galos-494312-unsplash-cropped.89041235.jpg" alt="White Tee" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                <div class="row">
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image">
+                                <div class="ribbon ribbon-info">Fresh</div><img src="./img/product/serrah-galos-494312-unsplash.95dae512.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Jackets</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">White Tee</a></h3><span class="text-muted">$40.00</span>
-                        </div>
-                    </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/kyle-loftus-590881-unsplash.5994ffa7.jpg" alt="Black blouse" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
-                                </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Jackets</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">White Tee</a></h3><span class="text-muted">$40.00</span>
                             </div>
                         </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Denim</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Black blouse</a></h3><span class="text-muted">$40.00</span>
-                        </div>
                     </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image">
-                            <div class="ribbon ribbon-primary">Sale</div><img src="./img/product/kyle-loftus-596319-unsplash.5ef14d25.jpg" alt="College jacket" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/kyle-loftus-590881-unsplash.5994ffa7.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Accessories</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">College jacket</a></h3><span class="text-muted">$40.00</span>
-                        </div>
-                    </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/ethan-haddox-484912-unsplash-cropped.499d5447.jpg" alt="Carrot-fit jeans" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
-                                </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Denim</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Black blouse</a></h3><span class="text-muted">$40.00</span>
                             </div>
                         </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Denim</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Carrot-fit jeans</a></h3><span class="text-muted">$40.00</span>
-                        </div>
                     </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/serrah-galos-494231-unsplash-cropped.1eae57f5.jpg" alt="Striped T-Shirt" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image">
+                                <div class="ribbon ribbon-primary">Sale</div><img src="./img/product/kyle-loftus-596319-unsplash.5ef14d25.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Jackets</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Striped T-Shirt</a></h3><span class="text-muted">$40.00</span>
-                        </div>
-                    </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/averie-woodard-319832-unsplash-cropped.756b7fb8.jpg" alt="Short top" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
-                                </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Accessories</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">College jacket</a></h3><span class="text-muted">$40.00</span>
                             </div>
                         </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Shirts</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Short top</a></h3><span class="text-muted">$40.00</span>
-                        </div>
                     </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image">
-                            <div class="ribbon ribbon-danger">Sold out</div><img src="./img/product/serrah-galos-494279-unsplash.ef5e0861.jpg" alt="Ethnic Sweater" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/ethan-haddox-484912-unsplash.d15d0697.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Sweaters</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Ethnic Sweater</a></h3><span class="text-muted">$40.00</span>
-                        </div>
-                    </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/dmitriy-ilkevich-437760-unsplash.6cf1669f.jpg" alt="Beige" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
-                                </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Denim</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Carrot-fit jeans</a></h3><span class="text-muted">$40.00</span>
                             </div>
                         </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Coats</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Beige</a></h3><span class="text-muted">$40.00</span>
-                        </div>
                     </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/ian-dooley-347968-unsplash.d1de4678.jpg" alt="Skull Tee" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/serrah-galos-494231-unsplash.ee00ec6a.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">T-Shirts</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Skull Tee</a></h3><span class="text-muted">$40.00</span>
-                        </div>
-                    </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/alex-holyoake-571682-unsplash-cropped.8340f478.jpg" alt="Trucker jacket" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
-                                </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Jackets</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Striped T-Shirt</a></h3><span class="text-muted">$40.00</span>
                             </div>
                         </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Denim</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Trucker jacket</a></h3><span class="text-muted">$40.00</span>
-                        </div>
                     </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/ao-456813-unsplash.814ec2de.jpg" alt="Blouse" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/averie-woodard-319832-unsplash.43a86b4b.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Denim</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Blouse</a></h3><span class="text-muted">$40.00</span>
-                        </div>
-                    </div>
-                    <!-- /product masonry-->
-                    <!-- product masonry-->
-                    <div class="product card border-0">
-                        <div class="product-image"><img src="./img/product/kyle-loftus-592041-unsplash.8be2e041.jpg" alt="Shirt" class="img-fluid" />
-                            <div class="product-hover-overlay">
-                                <a href="detail.html" class="product-hover-overlay-link"></a>
-                                <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa mr-2"></i>View</a><a href="#" data-toggle="modal"
-                                        data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
-                                </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Shirts</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Short top</a></h3><span class="text-muted">$40.00</span>
                             </div>
                         </div>
-                        <div class="py-2">
-                            <p class="text-muted text-sm mb-1">Denim</p>
-                            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Shirt</a></h3><span class="text-muted">$40.00</span>
+                    </div>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image">
+                                <div class="ribbon ribbon-danger">Sold out</div><img src="./img/product/serrah-galos-494279-unsplash.ef5e0861.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Sweaters</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Ethnic Sweater</a></h3><span class="text-muted">$40.00</span>
+                            </div>
                         </div>
                     </div>
-                    <!-- /product masonry-->
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/dmitriy-ilkevich-437760-unsplash.6cf1669f.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Coats</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Beige</a></h3><span class="text-muted">$40.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/ian-dooley-347968-unsplash.d1de4678.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">T-Shirts</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Skull Tee</a></h3><span class="text-muted">$40.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/alex-holyoake-571682-unsplash.89d20346.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Denim</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Trucker jacket</a></h3><span class="text-muted">$40.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/ao-456813-unsplash.814ec2de.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Denim</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Blouse</a></h3><span class="text-muted">$40.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product-->
+                    <!-- product-->
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-image"><img src="./img/product/kyle-loftus-592041-unsplash.8be2e041.jpg" alt="product" class="img-fluid" />
+                                <div class="product-hover-overlay">
+                                    <a href="detail.html" class="product-hover-overlay-link"></a>
+                                    <div class="product-hover-overlay-buttons"><a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a><a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">View</span></a>
+                                        <a
+                                            href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-dark btn-product-right"><i class="fa fa-expand-arrows-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-2">
+                                <p class="text-muted text-sm mb-1">Denim</p>
+                                <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Shirt</a></h3><span class="text-muted">$40.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product-->
                 </div>
                 <nav aria-label="page navigation" class="d-flex justify-content-center mb-5 mt-3">
                     <ul class="pagination">
@@ -1048,6 +1080,7 @@
             inputValues[handle].value = values[handle];
         });
     </script>
+    <script src="./vendor/jquery-parallax.js/parallax.min.js"></script>
     <script src="./vendor/jquery.cookie/jquery.cookie.js">
     </script>
     <script src="./js/demo.36f8799a.js"></script>
